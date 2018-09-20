@@ -1,1 +1,1 @@
-Scrape polling station and district data from Perth and Kinross Council
+Scrape polling station and district data from Moray Council
