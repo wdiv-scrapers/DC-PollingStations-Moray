@@ -8,7 +8,7 @@ districts_url = "https://opendata.arcgis.com/datasets/bd878bfec39f4a659c2d016f1b
 council_id = 'MRY'
 
 search_scraper = HashOnlyScraper(search_url, council_id, 'datasets', 'json')
-search_scraper.scrape()
+search_scraper.scrape(exclude_keys=['meta'])
 stations_scraper = GeoJsonScraper(stations_url, council_id, 'utf-8', 'stations', key='OBJECTID')
 stations_scraper.scrape()
 districts_scraper = GeoJsonScraper(districts_url, council_id, 'utf-8', 'districts', key='OBJECTID')
