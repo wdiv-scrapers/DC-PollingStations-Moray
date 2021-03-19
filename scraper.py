@@ -2,7 +2,7 @@ from dc_base_scrapers.geojson_scraper import GeoJsonScraper
 from dc_base_scrapers.hashonly_scraper import HashOnlyScraper
 
 
-search_url = "https://opendata.arcgis.com/api/v3/datasets?q=polling&filter%5Bowner%5D=gis_moray"
+search_url = "https://opendata.arcgis.com/api/v3/datasets?q=polling&filter[owner]=gis_moray&fields[datasets]=name,url"
 stations_url = "https://opendata.arcgis.com/datasets/65e731a73f384fadad25bef39fdcc342_0.geojson"
 districts_url = "https://opendata.arcgis.com/datasets/bd878bfec39f4a659c2d016f1b3bc920_1.geojson"
 council_id = 'MRY'
